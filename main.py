@@ -14,13 +14,14 @@ def start():
     pass
 
 
-def event(event):
+def event(event: pygame.event.Event):
     if event.type == pygame.QUIT:
         screen.running = False
 
 
 def loop():
-    pass
+    python_logo = pygame.image.load("pyxd.png")
+    screen.add(python_logo, Vector2(24, 52).xy)
 
 
 screen.start(start, event, loop)
