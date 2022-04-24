@@ -56,4 +56,4 @@ class window:
         return self.__screen.get_window_size()
 
     def add(self, obj, coord: tuple):
-        self.__game_screen.blit(obj, coord)
+        return self.__game_screen.blit(obj, coord)

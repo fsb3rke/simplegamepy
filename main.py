@@ -21,7 +21,8 @@ def event(event: pygame.event.Event):
 
 def loop():
     python_logo = pygame.image.load("pyxd.png")
-    screen.add(python_logo, Vector2(24, 52).xy)
+    x = screen.add(python_logo, Vector2(24, 52).xy)
+    screen.add(python_logo, Vector2(132, 52).xy)
 
 
 screen.start(start, event, loop)
